@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer/index";
+// import { Router, BrowserRouter } from "react-router-dom";
 
 function App() {
   const [categories] = useState([
@@ -11,13 +13,13 @@ function App() {
       description: "Group Projects I have participated in.",
     },
     {
-      name: "homework",
+      name: "homeworks",
       description: "Assignments I have completed during Coding Bootcamp.",
     },
     { name: "resume", description: "My Resume" },
     // {
-    //   name: "landscape",
-    //   description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+    //   name: "",
+    //   description: "",
     // },
   ]);
 
@@ -36,6 +38,8 @@ function App() {
           <About></About>
         </div>
       </main>
+      <>Stuff!</>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,22 @@
+const projectData = [
+  {
+    id: 1,
+    name: "Project 2",
+    description: "Project 2 Description.",
+    githubLink: "https://github.com/alanam79/The_Kings_Mile",
+    liveAppLink: "https://the-kings-mile.herokuapp.com",
+    imgAlt: "Project 2 alt",
+    photoUrl: "./projects/portfolio-2.jpg",
+  },
+  {
+    id: 2,
+    name: "Project 1",
+    description: "Project 1 Description",
+    githubLink: "https://github.com/DanielOrnelas01/project-1",
+    liveAppLink: "https://danielornelas01.github.io/project-1/",
+    imgAlt: "project 1 alt",
+    photoUrl: "./projects/portfolio-1.jpg",
+  },
+];
+
+module.exports = projectData;

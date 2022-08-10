@@ -1,24 +1,27 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
-import photo from "../../assets/projects/portfolio-2.jpg";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
+import ProjectData from "./projectData";
 
 function Projects() {
-  const currentCategory = {
-    name: "projects",
-    description: "Group Projects I have participated in.",
-  };
-
   return (
     <section>
-      <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.name}</p>
-      <div>
-        <img
-          src={photo}
-          alt="Project Example"
-          className="img-thumbnail mx-1"
-        />
-      </div>
+      {ProjectData.map((project) => {
+        return(
+        <div key={project.id}>
+          <h1>{project.name}</h1>
+          <p>{project.description}</p>
+          <div>
+            <img
+              src={project.photoUrl}
+              alt={project.imgAlt}
+              className="img-thumbnail mx-1"
+            />
+          </div>
+          <a href={project.githubLink}>Github Repo</a>
+          <a href={project.liveAppLink}>Github Repo</a>
+        </div>
+        )
+      })}
     </section>
   );
 }
