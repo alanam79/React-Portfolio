@@ -12,10 +12,10 @@ function App() {
       name: "projects",
       description: "Group Projects I have participated in.",
     },
-    {
-      name: "homeworks",
-      description: "Assignments I have completed during Coding Bootcamp.",
-    },
+    // {
+    //   name: "homeworks",
+    //   description: "Assignments I have completed during Coding Bootcamp.",
+    // },
     { name: "resume", description: "My Resume" },
     // {
     //   name: "",
