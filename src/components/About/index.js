@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import coverImage from "../../assets/cover/hero-bg.jpg";
+import coverImage from "../../assets/cover/profile-img.jpg";
 
 function About() {
   // set about me to default view on hitting the page
@@ -13,7 +13,7 @@ function About() {
       <img
         src={coverImage}
         className="my-2"
-        style={{ width: "100%" }}
+        style={{ width: "15%" }}
         alt="cover"
       />
     </section>

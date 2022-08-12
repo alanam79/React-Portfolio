@@ -4,7 +4,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer/index";
-// import { Router, BrowserRouter } from "react-router-dom";
+// import { Router, BrowserRouter } from "react-router-dom"; <---look into this in the future
 
 function App() {
   const [categories] = useState([
