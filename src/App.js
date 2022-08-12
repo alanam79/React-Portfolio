@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer/index";
+import Footer from "./components/Footer";
 // import { Router, BrowserRouter } from "react-router-dom"; <---look into this in the future
 
 function App() {

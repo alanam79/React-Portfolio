@@ -8,15 +8,23 @@ function About() {
   }, []);
 
   return (
-    <section className="my-5">
-      <h1 id="about">Hello World!</h1>
-      <img
-        src={coverImage}
-        className="my-2"
-        style={{ width: "15%" }}
-        alt="cover"
-      />
-    </section>
+    <div className="container">
+      <div className="row">
+        <div className="col-6">
+          <div>
+            <img
+              src={coverImage}
+              className="my-2"
+              style={{ width: "15%" }}
+              alt="cover"
+            />
+          </div>
+          <div className="col-6">
+            <h1 id="about">Hello World!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

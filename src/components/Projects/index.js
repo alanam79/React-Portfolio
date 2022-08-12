@@ -3,7 +3,10 @@ import React from "react";
 // import ProjectData from "./projectData";
 
 function Projects() {
-  return <section></section>;
+  return <section>
+
+    
+  </section>;
 }
 
 // below is correct way shown by tutor, using module work for first draft of portfolio
