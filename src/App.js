@@ -1,7 +1,7 @@
 // this is the center of the application, root component, or wrapper component
 import React, { useState } from "react";
 import About from "./components/About";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -11,7 +11,7 @@ function App() {
   const [categories] = useState([
     {
       name: "projects",
-      description: "Group Projects I have participated in.",
+      description: "Examples of projects and challenges I have participated or worked on.",
     },
     // {
     //   name: "homeworks",

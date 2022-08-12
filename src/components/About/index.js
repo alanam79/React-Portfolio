@@ -4,8 +4,8 @@ import coverImage from "../../assets/cover/profile-img.jpg";
 function About() {
   // set about me to default view on hitting the page
   useEffect(() => {
-    document.title = "Home Page";
-  }, []);
+    document.title = "About";
+  });
 
   return (
     <div className="container">
@@ -14,7 +14,7 @@ function About() {
           <div>
             <img
               src={coverImage}
-              className="my-2"
+              className="my-4"
               style={{ width: "15%" }}
               alt="cover"
             />

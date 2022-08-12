@@ -1,13 +1,31 @@
 import React from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
-// import ProjectData from "./projectData";
+import { capitalizeFirstLetter } from "../../utils/helpers";
+import photo from "../../assets/projects/small/portfolio-1-min.jpg";
 
-function Projects() {
-  return <section>
+function Projects(props) {
+  const currentCategory = {
+    name: "projects",
+    description:
+      "Examples of projects and challenges I have participated or worked on.",
+  };
 
-    
-  </section>;
+  return (
+    <section>
+      <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
+      <p>{currentCategory.name}</p>
+      <div>
+        <img
+          src={photo}
+          style={{ width: "30%" }}
+          alt="Portfolio Example"
+          className="img-thumbnail mx-1"
+        />
+      </div>
+    </section>
+  );
 }
+
+export default Projects;
 
 // below is correct way shown by tutor, using module work for first draft of portfolio
 // function Projects() {
@@ -33,5 +51,3 @@ function Projects() {
 //     </section>
 //   );
 // }
-
-export default Projects;
