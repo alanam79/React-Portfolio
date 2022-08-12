@@ -23,7 +23,7 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <h2>📍Portfolio!</h2>
+      {/* <h2>📍Portfolio!</h2> */}
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
