@@ -43,8 +43,8 @@ function App() {
         {/* identified with the ? and : symbols. The ternary operator is a popular pattern in React to enable conditional rendering */}
         {!contactSelected ? (
           <>
+           <About></About>
             <Projects currentCategory={currentCategory}></Projects>
-            <About></About>
           </>
         ) : (
           <ContactForm></ContactForm>

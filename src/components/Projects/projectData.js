@@ -12,7 +12,7 @@ const projectData = [
   {
     id: 1,
     name: "Project 2",
-    description: "Project 2 Description.",
+    description: "Project 2 Description",
     githubLink: "https://github.com/alanam79/The_Kings_Mile",
     liveAppLink: "https://the-kings-mile.herokuapp.com",
     imgAlt: "Project 2",
