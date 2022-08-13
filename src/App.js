@@ -14,13 +14,13 @@ import Footer from "./components/Footer";
 function App() {
   const [categories] = useState([
     {
-      name: "projects",
+      name: "portfolio",
       description: "Examples of projects I have participated or worked on",
     },
-    {
-      name: "challenges",
-      description: "Challenges completed throughout the Bootcamp class",
-    },
+    // {
+    //   name: "challenges",
+    //   description: "Challenges completed throughout the Bootcamp class",
+    // },
     { name: "resume", description: "My Resume" },
   ]);
 
