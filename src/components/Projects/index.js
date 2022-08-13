@@ -10,6 +10,8 @@ function Projects() {
             <div key={project.id}>
               <h1>{project.name}</h1>
               <p>{project.description}</p>
+              <a href={project.githubLink}>Github Repo</a>
+              <a href={project.liveAppLink}>Live App</a>
               <div>
                 <img
                   src={project.photoUrl}
@@ -17,8 +19,8 @@ function Projects() {
                   className="img-thumbnail mx-1"
                 />
               </div>
-              <a href={project.githubLink}>Github Repo</a>
-              <a href={project.liveAppLink}>Live App</a>
+              {/* <a href={project.githubLink}>Github Repo</a>
+              <a href={project.liveAppLink}>Live App</a> */}
             </div>
           </div>
         );
