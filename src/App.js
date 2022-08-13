@@ -50,7 +50,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
-      <>Stuff!</>
+      {/* <>Stuff!</> */}
       <Footer />
     </div>
   );
