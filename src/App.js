@@ -4,6 +4,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ContactForm from "./components/Contact"
 // import Header from "./components/Header"; <--finish development
 // import { Router, BrowserRouter } from "react-router-dom"; <---look into this in the future
 
@@ -36,6 +37,7 @@ function App() {
       ></Nav>
       <main>
         <div>
+          <ContactForm></ContactForm>
           <Projects currentCategory={currentCategory}></Projects>
           <br />
           <About></About>

@@ -1,4 +1,10 @@
+import React, { useState } from 'react';
+
 function ContactForm() {
+
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+
+
   // JSX
   return (
     <section>
@@ -10,7 +16,7 @@ function ContactForm() {
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" defaultValue={formState.name} />
         </div>
         <div>
           <label htmlFor="message">Message:</label>
