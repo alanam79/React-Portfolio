@@ -1,7 +1,10 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
-import photo from "../../assets/projects/small/portfolio-1-min.jpg";
+import photo from "../../assets/projects/small/portfolio-2-min.jpg";
 
+// useState() is a function that will always return an array. The first item is the value of your state (or store your state), and the second item is a setter, which allows you to set the state to something else. 
+// Because we're destructuring from an array, we could name these two things whatever we want, but it's best to stick to variable names that make sense.
+// useState(0), has it started at 0, but can be any number wanted/needed
 function Projects(props) {
   const currentCategory = {
     name: "projects",
