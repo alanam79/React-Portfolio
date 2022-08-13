@@ -6,6 +6,8 @@ function Nav(props) {
     categories = [],
     setCurrentCategory,
     currentCategory,
+    contactSelected,
+    setContactSelected,
   } = props;
 
   // below can be used if the useEffect in About component is commented out, this will allow the tabs to change to show which section you are in
@@ -21,33 +23,39 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-      <a data-testid="link" href="/">
-        Alana McKeel
+        <a id="link" href="/">
+          Alana McKeel
         </a>
-        </h2>
+      </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-1">
-          <a data-testid="about" href="#about">
+            <a
+              id="about"
+              href="#about"
+              onClick={() => setContactSelected(false)}
+            >
               About me
             </a>
           </li>
-          <li className="mx-2">
-            <span>Contact</span>
+          <li className={`mx-2 ${contactSelected && "navActive"}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
           {/* mapping over the array of categories, Whenever we map over anything in JSX, the outermost element must have a key attribute that's set to be something unique. */}
           {/* wrapped below in an anonymous arrow function to allow about category selection function to work when clicked */}
           {categories.map((category) => (
             <li
               className={`mx-1 ${
-                // The below code means that currentCategory.name === category.name will get evaluated, and as long as it is true, then the second bit of the short circuit, navActive, will be returned.
-                currentCategory.name === category.name && "navActive"
+                currentCategory.name === category.name &&
+                !contactSelected &&
+                `navActive`
               }`}
               key={category.name}
             >
               <span
                 onClick={() => {
                   setCurrentCategory(category);
+                  setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}

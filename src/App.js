@@ -4,7 +4,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import ContactForm from "./components/Contact"
+import ContactForm from "./components/Contact";
 // import Header from "./components/Header"; <--finish development
 // import { Router, BrowserRouter } from "react-router-dom"; <---look into this in the future
 
@@ -13,6 +13,8 @@ import ContactForm from "./components/Contact"
 // Because we're destructuring from an array, we could name these two things whatever we want, but it's best to stick to variable names that make sense.
 // useState(0), has it started at 0, but can be any number wanted/needed
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
   const [categories] = useState([
     {
       name: "portfolio",
@@ -34,14 +36,19 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        <div>
+        {/* identified with the ? and : symbols. The ternary operator is a popular pattern in React to enable conditional rendering */}
+        {!contactSelected ? (
+          <>
+            <Projects currentCategory={currentCategory}></Projects>
+            <About></About>
+          </>
+        ) : (
           <ContactForm></ContactForm>
-          <Projects currentCategory={currentCategory}></Projects>
-          <br />
-          <About></About>
-        </div>
+        )}
       </main>
       <>Stuff!</>
       <Footer />
