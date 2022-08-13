@@ -37,6 +37,7 @@ function App() {
       <main>
         <div>
           <Projects currentCategory={currentCategory}></Projects>
+          <br />
           <About></About>
         </div>
       </main>
