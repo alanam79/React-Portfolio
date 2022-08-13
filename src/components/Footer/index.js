@@ -17,7 +17,7 @@ const Footer = () => {
               <FaLinkedin className="linkedin" />
             </a>
             <a href="mailto:alanarmckeel@gmail.com">
-              <FaEnvelope className="" />
+              <FaEnvelope className="email" />
             </a>
           </div>
         </div>
