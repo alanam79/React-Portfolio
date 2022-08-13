@@ -3,9 +3,9 @@ import coverImage from "../../assets/cover/profile-img.jpg";
 
 function About() {
   // set about me to default view on hitting the page
-  useEffect(() => {
-    document.title = "About";
-  });
+  // useEffect(() => {
+  //   document.title = "About";
+  // });
 
   return (
     <div className="container">

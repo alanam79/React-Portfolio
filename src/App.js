@@ -7,24 +7,21 @@ import Footer from "./components/Footer";
 // import Header from "./components/Header"; <--finish development
 // import { Router, BrowserRouter } from "react-router-dom"; <---look into this in the future
 
-
 // lifted the state to the parent, so it can be used by all the children components
+// useState() is a function that will always return an array. The first item is the value of your state (or store your state), and the second item is a setter, which allows you to set the state to something else.
+// Because we're destructuring from an array, we could name these two things whatever we want, but it's best to stick to variable names that make sense.
+// useState(0), has it started at 0, but can be any number wanted/needed
 function App() {
   const [categories] = useState([
     {
       name: "projects",
-      description:
-        "Examples of projects and challenges I have participated or worked on.",
+      description: "Examples of projects I have participated or worked on",
     },
-    // {
-    //   name: "homeworks",
-    //   description: "Assignments I have completed during Coding Bootcamp.",
-    // },
+    {
+      name: "challenges",
+      description: "Challenges completed throughout the Bootcamp class",
+    },
     { name: "resume", description: "My Resume" },
-    // {
-    //   name: "",
-    //   description: "",
-    // },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -39,7 +36,7 @@ function App() {
       ></Nav>
       <main>
         <div>
-          <Projects></Projects>
+          <Projects currentCategory={currentCategory}></Projects>
           <About></About>
         </div>
       </main>
