@@ -10,7 +10,7 @@ function Projects({ currentCategory }) {
       <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
       <p>{description}</p>
       {/* <div></div> */}
-      <PortfolioList category={currentCategory.name} />
+      {/* <PortfolioList category={currentCategory.name} /> */}
     </section>
   );
 }
