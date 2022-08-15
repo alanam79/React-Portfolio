@@ -29,18 +29,20 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li className="mx-1">
-            <a
+          {/* <li className="mx-1"> */}
+            {/* <a
               id="about"
               href="#about"
               onClick={() => setContactSelected(false)}
             >
               About me
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
+            </a> */}
+          {/* </li> */}
+          {/* <li className={`mx-2 ${contactSelected && "navActive"}`}> */}
+            {/* <span onClick={() => setContactSelected(true)}>Contact</span> */}
+          {/* </li> */}
+
+
           {/* mapping over the array of categories, Whenever we map over anything in JSX, the outermost element must have a key attribute that's set to be something unique. */}
           {/* wrapped below in an anonymous arrow function to allow about category selection function to work when clicked */}
           {categories.map((category) => (
@@ -55,7 +57,7 @@ function Nav(props) {
               <span
                 onClick={() => {
                   setCurrentCategory(category);
-                  setContactSelected(false);
+                  // setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}

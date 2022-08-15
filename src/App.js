@@ -13,21 +13,25 @@ import ContactForm from "./components/Contact";
 // Because we're destructuring from an array, we could name these two things whatever we want, but it's best to stick to variable names that make sense.
 // useState(0), has it started at 0, but can be any number wanted/needed
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
 
   const [categories] = useState([
+    {
+      name: "about",
+      description: "About me",
+    },
     {
       name: "portfolio",
       description: "Examples of projects I have participated or worked on",
     },
-    // {
-    //   name: "challenges",
-    //   description: "Challenges completed throughout the Bootcamp class",
-    // },
+    {
+      name: "contact",
+      description: "Contact",
+    },
     { name: "resume", description: "My Resume" },
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0].name);
 
   return (
     <div>
@@ -40,13 +44,12 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {/* identified with the ? and : symbols. The ternary operator is a popular pattern in React to enable conditional rendering */}
-        {!contactSelected ? (
+          {currentCategory === "about" (
           <>
            <About></About>
             <Projects currentCategory={currentCategory}></Projects>
           </>
-        ) : (
+        ) (
           <ContactForm></ContactForm>
         )}
       </main>
