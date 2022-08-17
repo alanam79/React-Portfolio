@@ -2,18 +2,18 @@ import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-    contactSelected,
-    setContactSelected,
-  } = props;
+  // const {
+  //   categories = [],
+  //   setCurrentCategory,
+  //   currentCategory,
+  //   contactSelected,
+  //   setContactSelected,
+  // } = props;
 
   // below can be used if the useEffect in About component is commented out, this will allow the tabs to change to show which section you are in
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+  // useEffect(() => {
+  //   document.title = capitalizeFirstLetter(currentCategory.name);
+  // }, [currentCategory]);
 
   // defining onclick event in the return statement
   // function categorySelected() {
@@ -30,20 +30,31 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-1">
-            <a
-              id="about"
-              href="#about"
-              onClick={() => setContactSelected(false)}
-            >
+            <a id="about" href="/">
               About me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className="mx-1">
+            <a id="about" href="/contact">
+              Contact
+            </a>
           </li>
+          <li className="mx-1">
+            <a id="about" href="/portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li className="mx-1">
+            <a id="about" href="/resume">
+              Resume
+            </a>
+          </li>
+          {/* <li className={`mx-2 ${contactSelected && "navActive"}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li> */}
           {/* mapping over the array of categories, Whenever we map over anything in JSX, the outermost element must have a key attribute that's set to be something unique. */}
           {/* wrapped below in an anonymous arrow function to allow about category selection function to work when clicked */}
-          {categories.map((category) => (
+          {/* {categories.map((category) => (
             <li
               className={`mx-1 ${
                 currentCategory.name === category.name &&
@@ -61,7 +72,7 @@ function Nav(props) {
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
-          ))}
+          ))} */}
         </ul>
       </nav>
     </header>
