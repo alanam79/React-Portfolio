@@ -5,7 +5,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #fff;
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -283,6 +283,7 @@ button {
 	margin-bottom: 30px;
 	padding: 10px 15px;	
 }
+
 
 a {
 	border-radius: 5px;

@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/portfolio" element={<Projects />} />
           {/* <Route exact path="/resume" element={<Resume />} /> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

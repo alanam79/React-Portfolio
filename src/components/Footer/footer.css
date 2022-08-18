@@ -1,15 +1,12 @@
 .main-footer {
     text-align: center;
     padding: 50px;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
     gap: 50px;
-}
-
-.icon {
-    font-size: 30px;
+    font-size: 50px;
 }
