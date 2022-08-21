@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.5a232d88.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.bf2ea251.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.bf2ea251.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.d4af420a.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.d4af420a.js.map",
+    "static/js/2.f86af368.chunk.js": "/React-Portfolio/static/js/2.f86af368.chunk.js",
+    "static/js/2.f86af368.chunk.js.map": "/React-Portfolio/static/js/2.f86af368.chunk.js.map",
+    "static/js/3.10580fd9.chunk.js": "/React-Portfolio/static/js/3.10580fd9.chunk.js",
+    "static/js/3.10580fd9.chunk.js.map": "/React-Portfolio/static/js/3.10580fd9.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/main.5a232d88.chunk.css.map": "/React-Portfolio/static/css/main.5a232d88.chunk.css.map",
+    "static/js/2.f86af368.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.f86af368.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/React-Portfolio/static/media/hero-bg.8e81d3c8.jpg",
+    "static/media/profile-img.c40efc05.jpg": "/React-Portfolio/static/media/profile-img.c40efc05.jpg",
+    "static/media/resume.9bc55680.pdf": "/React-Portfolio/static/media/resume.9bc55680.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4af420a.js",
+    "static/js/2.f86af368.chunk.js",
+    "static/css/main.5a232d88.chunk.css",
+    "static/js/main.bf2ea251.chunk.js"
+  ]
+}
