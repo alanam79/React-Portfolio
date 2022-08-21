@@ -5,8 +5,8 @@ import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -17,9 +17,8 @@ function App() {
           <Route exact path="/" element={<About />} />
           <Route exact path="/contact" element={<ContactForm />} />
           <Route exact path="/portfolio" element={<Projects />} />
-          {/* <Route exact path="/resume" element={<Resume />} /> */}
+          <Route exact path="/resume" element={<Resume />} />
         </Routes>
-        {/* <Footer /> */}
       </Router>
     </div>
   );
