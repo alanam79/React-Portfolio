@@ -1,9 +1,11 @@
 import React from "react";
+import Footer from "../Footer/index";
 import ProjectData from "./projectData";
+import "./Project.css";
 
 function Projects() {
   return (
-    <section>
+    <section className="main-body">
       {ProjectData.map((project) => {
         return (
           <div className="flex-row">
@@ -19,12 +21,11 @@ function Projects() {
                   className="img-thumbnail mx-1"
                 />
               </div>
-              {/* <a href={project.githubLink}>Github Repo</a>
-              <a href={project.liveAppLink}>Live App</a> */}
             </div>
           </div>
         );
       })}
+      <Footer />
     </section>
   );
 }
