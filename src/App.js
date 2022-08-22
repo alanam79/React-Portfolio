@@ -14,10 +14,10 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route exact path="/" element={<About />} />
-          <Route exact path="/contact" element={<ContactForm />} />
-          <Route exact path="/portfolio" element={<Projects />} />
-          <Route exact path="/resume" element={<Resume />} />
+          <Route path="/" element={<About />} />
+          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/portfolio" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
     </div>
