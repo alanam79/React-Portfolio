@@ -50,9 +50,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   If the website is not working, please use npm start in the terminal.
 
   # Website
-  https://alanam79.github.io/react-portfolio
+  https://alanam79.github.io/React-Portfolio/
 
   ## Screenshots
+  [![1.jpg](https://i.postimg.cc/J0ZdFRcg/1.jpg)](https://postimg.cc/V0sRrQhB)
+  [![2.jpg](https://i.postimg.cc/J4CFkBRW/2.jpg)](https://postimg.cc/QVSSLCB6)
 
   ## Questions
   For additional questions and/or information, please go to the creator's Github at: github.com/alanam79, or email alanarmckeel@gmail.com.
