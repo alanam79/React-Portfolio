@@ -8,7 +8,7 @@ function Projects() {
     <section className="main-body">
       {ProjectData.map((project) => {
         return (
-          <div className="flex-row">
+          <div className="align-items:center">
             <div key={project.id}>
               <h1>{project.name}</h1>
               <p>{project.description}</p>

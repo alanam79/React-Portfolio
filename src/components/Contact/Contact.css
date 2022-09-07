@@ -1,16 +1,5 @@
-.contact-header {
+.contact-box {
   text-align: center;
   padding: 50px;
-}
-
-.contact-box {
-  display: block;
-  text-align: center;
-}
-
-.contact-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

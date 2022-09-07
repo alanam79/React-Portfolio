@@ -21,6 +21,16 @@ const projectData = [
   },
   {
     id: 3,
+    name: "Project 3",
+    description:
+      "An app for users that want to discover a wide variety of pet & animal related podcasts",
+    githubLink: "https://github.com/shaunmichaelgreene/group-project-3",
+    liveAppLink: "https://nameless-reef-29126.herokuapp.com/",
+    imgAlt: "Project 3",
+    photoUrl: process.env.PUBLIC_URL + '/project/small/project_3.jpg',
+  },
+  {
+    id: 4,
     name: "Budget Tracker",
     description:
       "A budget tracker that allows the user to have offline access to add and remove expenses. Once online access is restored, the users entries are added.",
@@ -30,7 +40,7 @@ const projectData = [
     photoUrl: process.env.PUBLIC_URL + '/project/small/budget-tracker-sm.jpg',
   },
   {
-    id: 4,
+    id: 5,
     name: "Tech Blog",
     description:
       "A blog that allows the user to post tech related articles, as well as allow the user to comment on other users blogs.",
@@ -41,7 +51,7 @@ const projectData = [
     photoUrl: process.env.PUBLIC_URL + '/project/small/tech-blog-sm.jpg',
   },
   {
-    id: 5,
+    id: 6,
     name: "Regex Tutorial",
     description:
       "A tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does.",
@@ -51,7 +61,7 @@ const projectData = [
     photoUrl: process.env.PUBLIC_URL + '/project/small/regex-sm.jpg',
   },
   {
-    id: 6,
+    id: 7,
     name: "Social Network API",
     description:
       "An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. There is no live link, please visit the github to review.",
